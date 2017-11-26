@@ -25,7 +25,7 @@ class Component extends React.Component {
   }
 }
 ```
-This will produce something like this:
+This will produce something like this:  
 ![Example image](/example/example-image.png)
 
 ### Props
