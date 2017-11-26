@@ -131,7 +131,7 @@ export class FloatingNodes extends Component {
         // if the dropped nodes exceeeds the node drop limit
         // remove the amount of exceeeding nodes from the persistent nodes
       let dropNodeCount = (prevState.dropNodeCount || 0) + dropAmount;
-      if (dropParams.limit)
+      if (dropParams.limit) {
         while(dropNodeCount > dropParams.limit) {
           dropNodeCount--;
           nodes.shift();
