@@ -1,6 +1,6 @@
 {
   "name": "floatingnodes",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Animated & interactive floating nodes with connections (canvas)",
   "main": "./dist/FloatingNodes.js",
   "scripts": {
