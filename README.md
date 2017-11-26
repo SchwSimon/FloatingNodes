@@ -1,3 +1,9 @@
 # FloatingNodes
 
-React component
+## Usage
+
+### Install
+
+```
+npm install --save floatingnodes
+```
