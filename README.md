@@ -4,6 +4,8 @@
 ![Travis Build](https://travis-ci.org/SchwSimon/FloatingNodes.svg?branch=master)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg?style=flat)](https://opensource.org/licenses/ISC)
 
+[Live Demo](https://flushmodules.com/floatingnodes/index.html)
+
 ## Installation & Usage
 
 ```sh
