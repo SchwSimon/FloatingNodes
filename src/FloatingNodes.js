@@ -131,9 +131,11 @@ export class FloatingNodes extends Component {
         // if the dropped nodes exceeeds the node drop limit
         // remove the amount of exceeeding nodes from the persistent nodes
       let dropNodeCount = (prevState.dropNodeCount || 0) + dropAmount;
-      while(dropNodeCount > dropParams.limit) {
-        dropNodeCount--;
-        nodes.shift();
+      if (dropParams.limit)
+        while(dropNodeCount > dropParams.limit) {
+          dropNodeCount--;
+          nodes.shift();
+        }
       }
 
       return {
@@ -294,7 +296,6 @@ FloatingNodes.propTypes = {
   enableInteraction: PropTypes.bool,
   interactiveNodeParams: PropTypes.shape({
     color: PropTypes.arrayOf(PropTypes.number),
-    speed: PropTypes.number,
     radius: PropTypes.number,
     connectionSize: PropTypes.number, // this is the outgoing connection size only !
     connectionColor: PropTypes.arrayOf(PropTypes.number),
