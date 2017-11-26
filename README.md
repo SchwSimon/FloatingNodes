@@ -26,7 +26,7 @@ class Component extends React.Component {
 }
 ```
 This will produce something like this:
-![Example image](https://github.com/SchwSimon/FloatingNodes/example/example-image.png)
+![Example image](/example/example-image.png)
 
 ### Props
 
@@ -34,11 +34,11 @@ key | prop type / notes | example
 ----|---------|------
 `width` | number (required) | `300`
 `width` | number (required) | `300`
-`nodeParams` | object | [see nodeParams](#nodeparams)
+`nodeParams` | object | [see #nodeParams](#nodeparams)
 `enableNodeDrop` | bool | `true`, `false`
-`nodeDropParams` | object | [see nodeDropParams](#nodedropparams)
+`nodeDropParams` | object | [see #nodeDropParams](#nodedropparams)
 `enableInteraction` | bool | `true`, `false`
-`interactiveNodeParams` | object | [see nodeParams](#nodeparams)
+`interactiveNodeParams` | object | [see #nodeParams](#nodeparams)
 `initialNodeCount` | number | `25`
 `movementUpdateTime` | number(every X seconds each nodes has a 50% chance to update their movement direction)  | `0.7`
 `enableOutOfBound` | bool (out of bound nodes are getting a new random position) | `true`, `false`
@@ -64,4 +64,4 @@ key | prop type / notes | example
 ----|---------|------
 `amount` | number (nodes per drop) | `3`
 `limit` | number (removes nodes over limit, `0` means no limit) | `6`
-`nodeDropParams` | object | [see nodeParams](#nodeparams)
+`nodeDropParams` | object | [see #nodeParams](#nodeparams)
