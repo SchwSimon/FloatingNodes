@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "stable"
+install:
+  - npm install --no-optional
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build

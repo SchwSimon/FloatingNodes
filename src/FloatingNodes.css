@@ -1,0 +1,9 @@
+.FloatingNodes-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.FloatingNodes-canvas {
+  display: block;
+  margin: 0 auto;
+}
