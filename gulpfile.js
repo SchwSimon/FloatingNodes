@@ -5,11 +5,13 @@ const webpack = require('webpack-stream');
 
 gulp.task('eslint', (callback) => {
   pump([
-    gulp.src('./src/*.js'),
-    eslint(),
-    eslint.format(),
-    eslint.failAfterError()
-  ]);
+      gulp.src('./src/*.js'),
+      eslint(),
+      eslint.format(),
+      eslint.failAfterError()
+    ],
+    callback
+  );
 });
 
 gulp.task('build', (callback) => {
